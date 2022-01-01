@@ -14,7 +14,7 @@ namespace MalinaFramework.Shell
         private static WindowPage SelectedPage = WindowPage.MainPage;
         private static ConsoleKeyInfo pressedKey;
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             // Prepare console to run the application
             ShellConsole.Init(

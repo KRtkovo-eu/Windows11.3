@@ -36,5 +36,11 @@ namespace Win16.Helpers
 
             return process.Start();
         }
+
+        public static void PlaySound(System.IO.Stream str)
+        {
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(str);
+            snd.Play();
+        }
     }
 }

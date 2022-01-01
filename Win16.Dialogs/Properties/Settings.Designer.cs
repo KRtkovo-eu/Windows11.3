@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Win16.Desktop.Properties {
+namespace Win16.Exec.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

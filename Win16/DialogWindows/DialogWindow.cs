@@ -14,7 +14,7 @@ using Win16.Helpers;
 
 namespace Win16
 {
-    public partial class TestDialog : Form
+    public partial class DialogWindow : Form
     {
         private const int cGrip = 16;      // Grip size
         private const int cCaption = 24;   // Caption bar height;
@@ -25,7 +25,7 @@ namespace Win16
         Font titleFont = new Font("System", 10, FontStyle.Bold);
         private SolidBrush titlebarColor;
 
-        public TestDialog()
+        public DialogWindow()
         {
             InitializeComponent();
 

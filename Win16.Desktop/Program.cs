@@ -8,15 +8,34 @@ namespace Win16.Desktop
 {
     static class Program
     {
+        [STAThreadAttribute]
+        public static void Main()
+        {
+            AppDomain.CurrentDomain.AssemblyResolve += Helpers.IncludeDlls.OnResolveAssembly;
+            App.Main();
+        }
+    }
+
+    static class App
+    {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DesktopForm());
+
+            try
+            {
+                Application.Run(new DesktopForm());
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

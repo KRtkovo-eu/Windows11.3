@@ -29,12 +29,12 @@ namespace Win16
             InitializeComponent();
             InitialiseFormEdge();
 
-            isDefaultShell = RegistryHelper.Read<string>(RegistryHelper.DefaultShell) == "win16.progman.exe" ? true : false;
+            isDefaultShell = RegistryHelper.Read<string>(RegistryHelper.DefaultShell) == "win16.shell.exe" ? true : false;
 
             // Run desktop application
             try
             {
-                var processName = Process.GetProcesses().FirstOrDefault(x => x.ProcessName.ToLowerInvariant() == "win16.desktop");//.GetProcessesByName("win16.Desktop.exe");
+                var processName = Process.GetProcesses().FirstOrDefault(x => x.ProcessName.ToLowerInvariant() == "win16.desktop");
                 if (processName == null)
                 {
                     Process.Start("win16.desktop.exe");
@@ -219,11 +219,11 @@ namespace Win16
                         Cursor.Current = Cursors.Default;
                     }
                     break;
-                case "Windows Taskbar":
-                    if (WindowsHelper.RunApplication("C:\\temp\\Retrobar.exe"))
-                    {
+                case "Desktop Configuration":
+                    //if (WindowsHelper.RunApplication(""))
+                    //{
                         Cursor.Current = Cursors.Default;
-                    }
+                    //}
                     break;
                 case "Computer Settings":
                     if (WindowsHelper.RunApplication("C:\\Windows\\system32\\control.exe"))
@@ -320,7 +320,7 @@ namespace Win16
         {
             if (isDefaultShell)
             {
-
+                WindowsHelper.RunApplication("shutdown", "/i", false, true);
             }
             else
             {
@@ -609,12 +609,6 @@ namespace Win16
     }
 
 
-    class NoSelectButton : Button
-    {
-        public NoSelectButton()
-        {
-            SetStyle(ControlStyles.Selectable, false);
-        }
-    }
+
 }
 
