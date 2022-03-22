@@ -1,0 +1,218 @@
+{
+  "Accessories": [
+    {
+      "Text": "Write",
+      "Path": "wordpad",
+      "Args": "",
+      "Icon": "WRITE001.ICO",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Paintbrush",
+      "Path": "games\\mspaint.exe",
+      "Args": "",
+      "Icon": "PBRUS001.ICO",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Calculator",
+      "Path": "games\\calc.exe",
+      "Args": "",
+      "Icon": "CALC001.ICO",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Notepad",
+      "Path": "notepad",
+      "Args": "",
+      "Icon": "NOTEP001.ICO",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Clock",
+      "Path": "bobshell.exec.exe",
+      "Args": "shell:::AnalogClock",
+      "Icon": "CLOCK001.ICO",
+      "UseShell": true,
+      "ShowWindow": true
+    }
+  ],
+  "Network": [
+    {
+      "Text": "Dial-up Connection (Default)",
+      "Path": "MODEM DIALUP DIALOG",
+      "Args": "",
+      "Icon": "modem.ico",
+      "UseShell": false,
+      "ShowWindow": false
+    }
+  ],
+  "Games": [
+    {
+      "Text": "Solitaire",
+      "Path": "games\\sol.exe",
+      "Args": "",
+      "Icon": "SOL001.ICO",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Cruel",
+      "Path": "games\\cruel.exe",
+      "Args": "",
+      "Icon": "cruel.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Golf",
+      "Path": "games\\golf.exe",
+      "Args": "",
+      "Icon": "golf.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Freecell",
+      "Path": "games\\freecell.exe",
+      "Args": "",
+      "Icon": "freecell.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Pegged",
+      "Path": "games\\pegged.exe",
+      "Args": "",
+      "Icon": "pegged.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Reversi",
+      "Path": "games\\reversi.exe",
+      "Args": "",
+      "Icon": "reversi.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Snake",
+      "Path": "games\\snake.exe",
+      "Args": "",
+      "Icon": "snake.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Taipei",
+      "Path": "games\\taipei.exe",
+      "Args": "",
+      "Icon": "taipei.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Tic Tac Toe",
+      "Path": "games\\tictac.exe",
+      "Args": "",
+      "Icon": "tictac.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Minesweeper",
+      "Path": "games\\winmine.exe",
+      "Args": "",
+      "Icon": "WINMI001.ICO",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Tetris",
+      "Path": "games\\tetris.exe",
+      "Args": "",
+      "Icon": "tetris.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    }
+  ],
+  "Main": [
+    {
+      "Text": "File Manager",
+      "Path": "explorer",
+      "Args": "",
+      "Icon": "WINFI001.ICO",
+      "UseShell": false,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Configure Desktop",
+      "Path": "bobshell.exec.exe",
+      "Args": "shell:::DesktopSettings",
+      "Icon": "desktop_old.ico",
+      "UseShell": false,
+      "ShowWindow": false
+    },
+    {
+      "Text": "Computer Settings",
+      "Path": "C:\\Windows\\system32\\control.exe",
+      "Args": "",
+      "Icon": "settings_gear.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Dockable Task Panel",
+      "Path": "bobshell.taskbar.exe",
+      "Args": "",
+      "Icon": "windows_button.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "MS-DOS Prompt",
+      "Path": "cmd",
+      "Args": "",
+      "Icon": "PROGM010.ICO",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Registry Editor",
+      "Path": "regedit",
+      "Args": "",
+      "Icon": "regedit.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Task Manager",
+      "Path": "taskmgr",
+      "Args": "",
+      "Icon": "monitor_application.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Servant Salamander",
+      "Path": "C:\\Program Files\\Altap Salamander\\salamand.exe",
+      "Args": "",
+      "Icon": "salam.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    },
+    {
+      "Text": "Task Scheduler",
+      "Path": "taskschd.msc",
+      "Args": "",
+      "Icon": "sched_tasks.ico",
+      "UseShell": true,
+      "ShowWindow": true
+    }
+  ]
+}

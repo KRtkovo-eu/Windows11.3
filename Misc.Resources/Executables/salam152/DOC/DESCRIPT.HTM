@@ -1,0 +1,578 @@
+<HTML>
+<HEAD>
+  <TITLE>Servant Salamander - description</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="White" TEXT="#003366" LINK="003366" VLINK="003366">
+<CENTER>
+<IMG SRC="descript.jpg" WIDTH=600 HEIGHT=82 BORDER=0 ALT="Description">
+
+<P><P>
+
+<TABLE WIDTH=600>
+<TR>
+<TD WIDTH=50>&nbsp;</TD>
+<TD VALIGN="Top">
+<FONT SIZE="2" FACE="MS Sans Serif">
+
+<B>Introduction</B><BR>
+The aim of the following document is to introduce functions and behavior of
+Servant Salamander. The program itself was designed to be user-friendly,
+therefore advanced users should be able to use it without reading any
+instructions. Yet we recommend that even they go through the following text
+to get an overview of program capabilities.
+<P>
+
+<B>Contents</B><BR>
+<A HREF="#Appearance">Appearance</A><BR>
+<A HREF="#System Command Line">System Command Line</A><BR>
+<A HREF="#Quick Search">Quick Search</A><BR>
+<A HREF="#Selecting of Files and Directories">Selecting of Files and Directories</A><BR>
+<A HREF="#Files and Directories Operations">Files and Directories Operations</A><BR>
+<A HREF="#Drag and Drop Operations and Context Menus">Drag and Drop Operations and Context Menus</A><BR>
+<A HREF="#Viewing and Editing">Viewing and Editing</A><BR>
+<A HREF="#Internal Viewer">Internal Viewer</A><BR>
+<A HREF="#Find Files">Find Files</A><BR>
+<A HREF="#Hot Paths">Hot Paths</A><BR>
+<A HREF="#User Menu">User Menu</A><BR>
+<A HREF="#Restoring Network Connections">Restoring Network Connections</A><BR>
+<A HREF="#Comparing Directories">Comparing Directories</A><BR>
+<A HREF="#Changing Case of Names">Changing Case of Names</A><BR>
+<A HREF="#Using Recycle Bin">Using Recycle Bin</A><BR>
+<A HREF="#Command line parameters of Salamand.exe">Command line parameters of Salamand.exe</A><BR>
+<A HREF="#Other Useful Commands">Other Useful Commands</A><BR>
+<A HREF="#Defined Hotkeys">Defined Hotkeys</A>
+<P>
+
+<A NAME="Appearance">
+<B>Appearance</B><BR>
+The main window of Servant Salamander is divided into three subwindows. Two
+panels with directory listings are side by side, and a system command line is
+at the bottom. Both panels are further divided into three subwindows - a
+directory line, a list of directories and files, and an information line. For
+a better understanding see the screenshot of the
+main window.
+<P>
+
+The directory line contains the change drive button, the current directory name,
+and the free space on the current drive or network volume. Click the left mouse
+button on the change drive button to open menu with available drives and Network
+Neighborhood, and the right mouse button to display context menu for the current
+directory. If the current drive or network volume doesn't support change
+notifications, automatic refresh of the list won't work, and the mark of
+exclamation is shown at the beginning of the directory line. The list of
+directories and files contains all wanted directories and files from the current
+directory. You can apply filters to this list and also choose if you want to see
+hidden and system directories and files. You can choose from two forms of this
+list - a brief form and a detailed form. The list in the brief form contains
+only names in columns (left panel in
+the main window screenshot).
+The list in the detailed form contains all information about each directory and
+file (right panel in the main window screenshot).
+The information line contains all information about the focused file or directory.
+<P>
+Each name in the list has a small graphical symbol for better orientation.
+There are special symbols for directories, executable files, associated files,
+and other files. Shared directories are marked by symbol of an open hand. Servant
+Salamander can also show the default icons provided by the system instead of
+these simple symbols. See
+the screenshot with the system icons.
+<P>
+For customization of the appearance, see menus Left, Options, and Right, the
+tab Panels in the Configuration dialog, and the Customize Colors dialog
+(on the tab General in the Configuration dialog). The split-line between
+panels can be positioned by mouse dragging. Double-click the left mouse button
+on the split-line to return it to the original position.
+<P>
+
+<A NAME="System Command Line">
+<B>System Command Line</B><BR>
+You can switch to the command line with Ctrl+Tab key, and with the same key or
+ESC key you can switch back to the panels. When the command line became active,
+you can type any command for the system shell, and then execute it with the
+Enter key. To insert the focused file or directory name from the panel to
+such command, use Ctrl+Enter key. Similarly, to insert the full current path
+from the left or right panel, use Ctrl+[ or Ctrl+] key.
+<P>
+On the tab General in the Configuration dialog, you can choose if the system
+command shell window should be closed after execution of the command. If you
+execute the command with Alt+Enter key, this setting for the command will be
+inverted.
+<P>
+The last thirty executed commands are stored in a command line history. Use
+Ctrl+Up and Ctrl+Down keys to scroll in this history. If the command line is
+active, and you need to switch to some other directory or execute some file
+in the panel, use Shift+Enter key or Enter key if command line is empty
+(ie. there is nothing to execute).
+<P>
+
+<A NAME="Quick Search">
+<B>Quick Search</B><BR>
+You can quickly find any desired name in the list of directories and files. Just
+start typing a name, and the first name with the typed prefix will be focused.
+You can extend this prefix with Right arrow key, and on the contrary you can
+clip this prefix with Left arrow key or Backspace key. To focus the next or
+previous name with the same prefix, use Down or Up arrow key. To leave quick
+search mode, use ESC key.
+<P>
+
+<A NAME="Selecting of Files and Directories">
+<B>Selecting of Files and Directories</B><BR>
+There are many ways how files and directories can be selected using the keyboard.
+To select the focused file or directory, use Insert or Spacebar key. To select
+names by the mask, use Num Plus key (numeric keypad). To unselect names by the
+mask, use Num Minus key (numeric keypad). Masks can contain usual wild-card
+characters - '*' for zero or more characters and '?' for any single character.
+So the mask '*a?*' will match all names containing 'a' followed by at least one
+character. To invert the selection, use Num Multiply key (numeric keypad). You
+can choose if you want to include directories into select/unselect operations on
+the tab General in the Configuration dialog. To select/unselect all the files
+and directories, use Ctrl+Num Multiply key (use this key to clear the whole
+selection).
+<P>
+There are also many ways to select files and directories using the mouse. You
+can use the left mouse button with Shift key to select a group of files and
+directories. Just move focus to (select) the first name in a group and then click on the
+last. To select one file or directory, click the left mouse button with the Ctrl
+key while on it. The right mouse button is used for selecting and for displaying
+context menus. You can choose which of these actions will be primary on the tab
+System in the Configuration dialog. The second action will be available on the
+right mouse button with Ctrl key. To select or unselect one file or directory,
+click the right mouse button while on it. To select or unselect group of files and
+directories, press the right mouse button on the first, drag it, and release
+it while on the last. Or click the right mouse button on the first and then click the
+right mouse button with Shift key while on the last.
+<P>
+
+<A NAME="Files and Directories Operations">
+<B>Files and Directories Operations</B><BR>
+You can use standard Windows clipboard operations for the selected files and
+directories. It means you can copy (Ctrl+C), cut (Ctrl+X), paste (Ctrl+V) and
+paste shortcuts of files and directories. On the other hand, you can use also
+standard MS-DOS ways of working with files and directories. To rename the
+focused file or directory, use F2 key. To copy the selected files and
+directories, use F5 key. You can choose if you want to clear the readonly file
+attribute when copying from CD-ROM on the tab General in the Configuration
+dialog. To move the selected files and directories, use F6 key. To delete the
+selected files and directories, use F8 key or Delete key if the panel is focused
+(focus is not in the system command line). If you use F8 or Delete key with
+Shift modifier key, you will invert (flip) usage of Recycle Bin (if Delete key doesn't
+send files to Recycle Bin, Shift+Delete key does and vice versa). To change
+attributes of the selected files and directories, use Ctrl+F2 key (each
+attribute is represented by one checkbox control with the following meaning -
+checked = set it, unchecked = clear it, and third state = let it be). To create
+the directory, use F7 key. You can also compress and uncompress files and
+directories on NTFS volumes in Windows NT.
+<P>
+The current path from the second panel is automatically offered as a target
+directory for copy and move operations. In addition to the target directory, you
+can also specify the operation mask. Operation masks can contain special
+characters - '*' for the rest of the name or the extension and '?' for a
+single character. So the operation mask 'new_*.???' will generate names which
+begin with 'new_' followed with the rest of the original name (from the fifth
+character to the end), and end with '.' followed with three characters from the
+original extension. Operation masks are usually used for simpler operations
+like changing extensions in the group of files (you can use '*.html' for
+renaming .htm files to .html files, etc.).
+<P>
+Some file operations which work with many files and directories can take several
+minutes. Because of the time required, you can find useful to minimize all
+program's windows during such operations. The operation progress will be
+displayed in the taskbar. You can choose if you want to be warned by a system
+beep when the operation finishes (on the tab General in the Configuration
+dialog).
+<P>
+
+<A NAME="Drag and Drop Operations and Context Menus">
+<B>Drag and Drop Operations and Context Menus</B><BR>
+You can drag and drop files and directories from Servant Salamander to other
+applications as well as back to Servant Salamander. Also you can drag and drop
+files and directories from other applications to Servant Salamander. We use
+standard cursor shapes, so you can easily distinguish among copying, moving,
+and creating shortcuts. To choose from these actions, use appropriate combinations
+of Shift and Ctrl modifier keys. You can also choose whether you want to confirm
+every drag&drop operation or not (see the tab General in the Configuration
+dialog).
+<P>
+The right mouse button is used for selecting of files and directories and for
+displaying context menus. You can choose which of these actions will be primary
+on the tab System in the Configuration dialog. The second action will be
+available using the right mouse button with the Ctrl key. The context menus
+are displayed for selected files and directories or for the focused file or
+directory if there is no selection. To open the context menus with the keyboard,
+use the Shift+F10 key.
+<P>
+
+<A NAME="Viewing and Editing">
+<B>Viewing and Editing</B><BR>
+To call the viewer for the focused file, use the F3 key. To call the alternate
+viewer for the focused file, use the Alt+F3 key. To call the editor for the focused
+file, use the F4 key. To call the editor for a new file, use the Shift+F4 key. The
+viewer and editor to be used is selected on the tab Viewer/Editor in the
+Configuration dialog. This tab is also used for specifying if the passing of
+long file names to viewer and editor is possible (it is necessary to turn this
+off if you are using an MS-DOS viewer or editor).
+<P>
+
+<A NAME="Internal Viewer">
+<B>Internal Viewer</B><BR>
+You can call the internal viewer for the focused file either with the F3 key or
+Alt+F3 key (it depends on viewer settings). You can choose from two types of
+view - a hex view (with F4 key in the viewer) and a text view (with F5 key in
+the viewer). Each row in the hex view type contains 16 bytes displayed in two
+ways - as hexadecimal numbers and as characters. Each row in the text view
+contains one line of text ended by some of the defined line ends. You can
+choose which line 'ends' should be used, in the internal viewer's Configuration
+dialog. This dialog is also used for setting the tab character's width.
+You can select a text by pressing, dragging and releasing of the left mouse
+button. Then you can copy it into the clipboard. To find a text pattern, use
+the F7 or Ctrl+F key. To find next or previous occurrence of the same text use the F6
+key or Shift+F6 key. See the <A HREF="#Find Files">Find Files</A> paragraph for
+details on pattern matching.
+<P>
+
+<A NAME="Find Files">
+<B>Find Files</B><BR>
+The Find Files dialog can be opened with Alt+F7 key. You can set criteria for
+searching in this dialog. They include the search paths and masks, containing
+text, and advanced search criteria. Each found file will be from one of the
+search paths, will match the appropriate mask, will contain the selected text,
+and will suit advanced search criteria. Advanced search criteria can be set in
+the Advanced Find dialog (open it with the button Advanced). They include
+required file attributes (each file attribute has one checkbox with the
+following meaning - unchecked = must be cleared, checked = must be set, third
+state = doesn't care). They include also required file size (size must be
+smaller, greater, or equal to selected size) and required file last modification
+time (this time must be older, newer, or equal to selected time). Change only
+criteria which you want to use, the rest will be in predefined not used state.
+<P>
+When you finished settings, you can start searching with the Start button. To
+stop searching, use ESC key or the Stop button. During and after searching, you
+can view, edit, and use user-menu commands for found files. You can also execute
+found files with Enter key or double-clicking the left mouse button. After
+searching, you can focus the chosen found file in the active panel with Focus
+button.
+<P>
+The searching may take a long time, and so you can, like during file operations,
+minimize all windows of Servant Salamander. Operation results are then displayed
+in the taskbar. You can choose if you want to be warned by the system beep when
+searching finishes (on the tab General in the Configuration dialog).
+<P>
+The containing text can be specified by a simple text expression or by a regular
+expression (Regular expression checkbox checked). The simple text expression can
+be set in a text or in a hexadecimal mode (HEX-mode checkbox checked). The text
+mode is obvious and the hexadecimal mode can be used to set character by
+character in hexadecimal numbers. You can also input normal text in the
+hexadecimal mode, but it must be quoted using double quotes. So if you set
+'01 02 "text" 00', it will be a pattern with 7 characters, 2+4+1. The regular
+expressions are much more powerful then the simple text expressions, you can
+use them to find texts, which have specified attributes. These attributes are
+for example "pattern begins at the beginning of line", "pattern ends at the end
+of line", "pattern starts with some prefix and ends with some suffix", "pattern
+is one word from a set of words", "pattern contains only characters from some
+character sequence (e.g. numbers)".
+<P>
+Here is a short guide to regular expressions:<BR>
+<UL>
+<LI>'^' - at the start of the expression matches the start of a line (for example,
+          '^test' matches all strings 'test' placed at the start of a line)
+<LI>'$' - at the end of the expression matches the end of a line
+<LI>'.' - matches any character
+<LI>'*' - after an expression matches 0 or more matches for the expression
+          (for example, 'ad*' matches 'a', 'ad', and as well as 'add' - in other
+           words, 'a' followed by any number of 'd')
+<LI>'+' - after an expression matches 1 or more matches for the expression
+          (for example, 'do+' matches 'do' and as well as 'doo' - in other words,
+           'd' followed by at least one 'o')
+<LI>'?' - after an expression matches 0 or 1 match for the expression
+          (for example, 'add?' matches 'ad' and 'add' - in other words, 'ad'
+           followed by optional 'd')
+<LI>'|' - between expressions matches match for first, match for second, etc.
+        (for example, 'red|blue|black' matches 'red', 'blue', and 'black'
+         - in other words, any of mentioned words)
+<LI>'[ ]' - characters in brackets match any one character that appears in the
+          brackets, but no others (for example, 'a[dts]' matches 'ad', 'at',
+          and 'as' - in other words, 'a' followed by 'd', 't', or 's')
+<LI>'[^ ]' - characters in brackets match any one character that doesn't appear in
+           the brackets, but no others (for example, '[^abc]' matches any
+           character except 'a', 'b', and 'c')
+<LI>'[-]' - signifies a range of characters (for example, '1[0-9]' matches all
+            numbers in range '10' to '19')
+<LI>'( )' - glues expressions in parentheses to one expression (for example,
+            '(very )*well' matches 'well', 'very well', and as well as
+            'very very well' - in other words, any number of 'very ' followed
+            by 'well')
+<LI>'\' - before any character matches this character (for example 'too\.'
+          matches only 'too.', note that 'too.' matches 'tool', 'took', and
+          as well as 'toon' - in other words, 'too' followed by any character)
+</UL>
+<P>
+The following, complete description of regular expressions is taken from
+documentation for the REGEXP library, which is a great work of Henry Spencer.
+<P>
+REGULAR EXPRESSION SYNTAX<BR>
+A regular expression is zero or more branches, separated by '|'.  It matches
+anything that matches one of the branches.
+<P>
+A branch is zero or more pieces, concatenated.  It matches a match for the first,
+followed by a match for the second, etc.
+<P>
+A piece is an atom possibly followed by '*', '+', or '?'. An atom followed by
+'*' matches a sequence of 0 or more matches of the atom.  An atom followed by
+'+' matches a sequence of 1 or more matches of the atom.  An atom followed by
+'?' matches a match of the atom, or the null string.
+<P>
+An atom is a regular expression in parentheses (matching a match for the regular
+expression), a range (see below), '.' (matching any single character), '^'
+(matching the null string at the beginning of line), '$' (matching the null
+string at the end of line), a '\' followed by a single character (matching that
+character), or a single character with no other significance (matching that
+character).
+<P>
+A range is a sequence of characters enclosed in '[]'. It normally matches any
+single character from the sequence. If the sequence begins with '^', it matches
+any single character not from the rest of the sequence.  If two characters in
+the sequence are separated by '-', this is shorthand for the full list of ASCII
+characters between them (e.g. '[0-9]' matches any decimal digit).  To include a
+literal ']' in the sequence, make it the first character (following a possible
+'^').  To include a literal '-', make it the first or last character.
+<P>
+AMBIGUITY<BR>
+If a regular expression could match two different parts of the text, it will
+match the one which begins earliest.  If both begin in the same place but match
+different lengths, or match the same length in different ways, life gets
+messier, as follows.
+<P>
+In general, the possibilities in a list of branches are considered in
+left-to-right order, the possibilities for '*', '+', and '?' are considered
+longest-first, nested constructs are considered from the outermost in, and
+concatenated constructs are considered leftmost-first.  The match that will be
+chosen is the one that uses the earliest possibility.
+<P>
+For example, '(ab|a)b*c' could match 'abc' in one of two ways. The first choice
+is between 'ab' and 'a'; since 'ab' is earlier, and does lead to a successful
+overall match, it is chosen.  Since the 'b' is already spoken for, the 'b*' must
+match its last possibility-the empty string-since it must respect the earlier
+choice.
+<P>
+In the particular case where no '|'s are present and there is only one '*', '+',
+or '?', the net effect is that the longest possible match will be chosen.  So
+'ab*', presented with 'xabbbby', will match 'abbbb'.  Note that if 'ab*' is
+tried against 'xabyabbbz', it will match 'ab' just after 'x', due to the
+begins-earliest rule.
+<P>
+
+<A NAME="Hot Paths">
+<B>Hot Paths</B><BR>
+Hot paths are used to access frequently visited directories. There are twenty
+hotkeys for ten hot paths, ten for defining and ten for getting to the defined
+hot path. To define the current directory as the hot path, use Shift+Ctrl+number
+key, where number is 0 to 9. To get to the defined hot path, use Ctrl+number
+key or menu Commands/Go to Hot Path. You can also define hot paths from the tab
+Hot Paths in the Configuration dialog.
+<P>
+
+<A NAME="User Menu">
+<B>User Menu</B><BR>
+The user menu is a list of user menu items. Each item contains an item title, a
+command, and item execution flags. The item title is used for displaying in the
+User Menu dialog. The command will be executed after choosing an item. Commands
+can contain predefined variables which will be expanded before execution. These
+variables are parts of a full filenames of selected files and directories:
+<DD><LI>%d - the drive (e.g. 'c:')</DD>
+<DD><LI>%p - the long path name (e.g. '\Program Files\Microsoft Internet\')</DD>
+<DD><LI>%h - the short path name (e.g. '\PROGRA~1\MICROS~1\')</DD>
+<DD><LI>%f - the long file name (e.g. 'read this file.txt')</DD>
+<DD><LI>%s - the short file name (e.g. 'READTH~1.TXT')</DD>
+<DD><LI>%% - the character '%' (if you need to use the character '%')</DD>
+<P>
+The item flags are used for choosing a type of the execution. These types are a
+direct execution and an execution through the system shell (with and without
+closing the shell window after execution). The direct execution is good for
+windowed applications. The executing through the system shell is usable for
+console oriented applications with some interesting output and for execution
+queues (pipes, redirected input and output, etc.).
+<P>
+You can define the user menu on the tab User Menu in the Configuration dialog.
+This tab is a little bit complicated. There are buttons for adding, modifying,
+and deleting of the user menu items. The focused item is parsed into the item
+name, the command, and the execution flags. After modifying these parsed data,
+you must use the button Modify to modify the user menu item. To change the
+order of the user menu items, use Ctrl+Up and Ctrl+Down keys in the listview
+control Menu Items.
+<P>
+You can open the User Menu dialog with the list of the user menu items from the
+panels and from the Find Files dialog with F9 key.
+<P>
+
+<A NAME="Restoring Network Connections">
+<B>Restoring Network Connections</B><BR>
+If some network connection is not accessible during the logon operation, the
+system temporarily disables this connection. To restore such a network
+connection, just change the drive to the appropriate disabled network volume
+with Alt+F1 or Alt+F2 key. If the network volume becomes inaccessible during
+work, and you'll try to access it, it may take a long time to the system to
+recognize this error. If this occurs, you can press ESC key to continue with
+the Servant Salamander (waiting for the system error runs in a separate thread).
+<P>
+
+<A NAME="Comparing Directories">
+<B>Comparing Directories</B><BR>
+The command Compare Directories is in the menu Commands. With this command you
+can compare contents of current directories in the left and the right panel.
+After comparing, files that are not present in the other panel and files that
+are newer or bigger will be selected in both panels.
+<P>
+
+<A NAME="Changing Case of Names">
+<B>Changing Case of Names</B><BR>
+The command Change Case is in the menu Files. With this command you can change
+case of the selected directory (including subdirectories or not) and file names
+to lower, upper, and mixed case. This is usable when you need to transfer files
+and directories from a case-insensitive file system to a case-sensitive file
+system.
+<P>
+
+<A NAME="Using Recycle Bin">
+<B>Using Recycle Bin</B><BR>
+You can enable deleting files and directories through the system Recycle Bin.
+This allows you to recover deleted files and directories. You can use the
+system Recycle Bin for all files and directories or only for files that match
+at least one of specified masks. By specifying the masks you can distinguish
+between important files (e.g. your text documents and your source codes) and
+files which you can easily restore from other sources (e.g. executables,
+libraries, or system files). Whether use the system Recycle Bin or not can be
+set on the tab System in the Configuration dialog.
+<P>
+
+<A NAME="Command line parameters of Salamand.exe">
+<B>Command line parameters of Salamand.exe</B><BR>
+You can specify current directories in panels after execution of Servant
+Salamander. These directories can be passed to Salamand.exe as first and second
+command line parameter. So 'Salamand.exe "C:\Program Files" D:\' will execute
+Servant Salamander with "C:\Program Files" in the left panel and "D:\" in the
+right panel.
+<P>
+
+<A NAME="Other Useful Commands">
+<B>Other Useful Commands</B><BR>
+You can get detailed information about the current drive or network volume
+with the command Drive Information from the menu Commands. If the system
+associations were changed, you need to refresh cached associations in Servant
+Salamander. You can do this by restarting Servant Salamander or by the command
+Reread Associations from the menu Commands. You can open special folders
+like My Computer, Recycle Bin, Control Panel, or Network Neighborhood directly
+from Salamander using the submenu Open Folder from the menu Commands.
+<P>
+
+<A NAME="Defined Hotkeys">
+<B>Defined Hotkeys</B><BR>
+There are many hotkeys defined in Servant Salamander. These can speed up your
+work with files and directories. You can find all the functions, also, in a menu
+together with associated hotkey.
+<UL>
+<LI>Tab - switch between the panels
+<LI>Ctrl+Tab - switch to/from the system command line
+</UL>
+<UL>
+<LI>Alt+F1 - change the drive in the left panel
+<LI>Alt+F2 - change the drive in the right panel
+<LI>Shift+Ctrl+A, ..., Shift+Ctrl+Z - change the drive in the focused panel to A:, ..., Z:
+</UL>
+<UL>
+<LI>Insert - select the focused file or directory in the focused panel
+<LI>Spacebar - select the focused file or directory in the focused panel
+<LI>Num Plus - select files and directories in the focused panel
+<LI>Num Minus - unselect files and directories in the focused panel
+<LI>Num Multiply - invert the selection in the focused panel
+<LI>Ctrl+Num Multiply - select/unselect all files and directories
+<LI>Num Divide - open a new system shell window
+</UL>
+<UL>
+<LI>F5 - copy the selected files and directories
+<LI>F6 - move the selected files and directories
+<LI>F7 - create the directory in the focused panel
+<LI>F8 - delete the selected files and directories
+<LI>Delete - only in the panels, delete the selected files and directories
+<LI>F2 - rename the focused file or directory
+<LI>Ctrl+F2 - change attributes of the selected files and directories
+<LI>Ctrl+F7 - change case of the selected files and directories
+</UL>
+<UL>
+<LI>Backspace - only in the panels, go to the parent directory in the focused panel
+<LI>Ctrl+PageUp - go to the parent directory in the focused panel
+<LI>Ctrl+\ - change the directory in the focused panel to root directory
+<LI>Ctrl+Backspace - in panels, go to the root directory (same as Ctrl+\)
+<LI>Ctrl+Backspace - in command line, delete whole word to the left
+<LI>Alt+Enter - only in the panels, show properties of the focused file or directory
+</UL>
+<UL>
+<LI>Ctrl+Enter - insert the name of the focused file or directory to the system command line
+<LI>Ctrl+[ - insert the full name of the current directory in the left panel to the system command line
+<LI>Ctrl+] - insert the full name of the current directory in the right panel to the system command line
+<LI>Ctrl+Shift+Enter - insert the full name of the current directory in the focused panel to the system command line
+<LI>Ctrl+Up - only in the system command line, list up in the commands history
+<LI>Ctrl+Down - only in the system command line, list down in the commands history
+<LI>Shift+Enter - only in the system command line, same function as Enter in the panel
+</UL>
+<UL>
+<LI>F9 - open the user menu
+<LI>Alt+F7 - find files
+<LI>Ctrl+F9 - refresh the list of directories and files in the focused panel
+<LI>Alt+F10 - calculate space occupied by the selected files and directories
+<LI>Shift+F10 - displays context menu for selected files and directories
+<LI>Shift+F7 - change the current directory
+<LI>Ctrl+F1 - display the Drive Information dialog
+<LI>Ctrl+F10 - compare directories
+<LI>Ctrl+F12 - choose filter for the focused panel
+</UL>
+<UL>
+<LI>Ctrl+F3 - sort files in the focused panel by name
+<LI>Ctrl+F4 - sort files in the focused panel by extension
+<LI>Ctrl+F5 - sort files in the focused panel by time
+<LI>Ctrl+F6 - sort files in the focused panel by size
+</UL>
+<UL>
+<LI>F3 - view the focused file
+<LI>Alt+F3 - view the focused file by alternate viewer
+<LI>F4 - edit the focused file
+<LI>Shift+F4 - edit the new file
+</UL>
+<UL>
+<LI>F11 - connect the network drive
+<LI>F12 - disconnect the network drive
+</UL>
+<UL>
+<LI>Shift+Ctrl+0, ..., Shift+Ctrl+9 - define hot-path number 0, ..., 9 to the current directory
+<LI>Ctrl+0, ..., Ctrl+9 - change the directory in the focused panel to hot-path number 0, ..., 9
+<LI>Ctrl+Alt+0, ..., Ctrl+Alt+9 - change the directory in the second panel to hot-path number 0, ..., 9
+</UL>
+<UL>
+<LI>Ctrl+C - copy the selected files and directories to clipboard
+<LI>Ctrl+X - cut the selected files and directories to clipboard
+<LI>Ctrl+V - paste the files and directories from clipboard to the current directory
+<LI>Ctrl+A - select/unselect all files and directories
+<LI>Ctrl+R - refresh the focused panel
+<LI>Ctrl+L - display the Drive Information dialog
+<LI>Ctrl+Q - calculate space occupied by the selected files and directories
+<LI>Ctrl+F - find files
+<LI>Ctrl+U - swap panels
+</UL>
+
+<HR>
+You can e-mail me any comments and suggestions:
+<A HREF="mailto:P.Solin@sh.cvut.cz?subject=Servant Salamander">P.Solin@sh.cvut.cz</A>
+<BR>
+For the most recent version of this document, go to
+<A HREF="http://vorvan.sh.cvut.cz/salamander">Servant Salamader's pages</A>
+<P>
+Last updated in March 16, 1998
+
+</FONT>
+</TD>
+</TR>
+</TABLE>
+
+</CENTER>
+</BODY>
+</HTML>

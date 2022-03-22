@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DOS.Shell", "DOS Shell\DOS.Shell.csproj", "{6C98B664-903C-4882-AC01-7BFE4AD2CD3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win113.Shell", "Win113.Shell\Win113.Shell.csproj", "{E56D90C7-B2E1-4E70-8B39-6DCCA2C31786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win113.Desktop", "Win113.Desktop\Win113.Desktop.csproj", "{235B1711-C6B4-4E21-88CC-962D5DF658CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win113.Exec", "Win113.Exec\Win113.Exec.csproj", "{6F972551-D00A-4607-B24B-BEB5C09E1833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win113.Taskbar", "Win113.Taskbar\Win113.Taskbar.csproj", "{E030E5A9-64F9-4447-80CC-61DAFA1438B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win113.Progman", "Win113.Progman\Win113.Progman.csproj", "{3D5A6D5C-ADE3-495D-9414-02980F7C74FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnalogClockControl", "Misc.Resources\Libraries\AnalogClockControl\AnalogClockControl.csproj", "{6FE72A43-CFAE-4B7A-84E2-01D4A3B2965C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C98B664-903C-4882-AC01-7BFE4AD2CD3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C98B664-903C-4882-AC01-7BFE4AD2CD3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C98B664-903C-4882-AC01-7BFE4AD2CD3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C98B664-903C-4882-AC01-7BFE4AD2CD3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E56D90C7-B2E1-4E70-8B39-6DCCA2C31786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E56D90C7-B2E1-4E70-8B39-6DCCA2C31786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E56D90C7-B2E1-4E70-8B39-6DCCA2C31786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E56D90C7-B2E1-4E70-8B39-6DCCA2C31786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235B1711-C6B4-4E21-88CC-962D5DF658CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235B1711-C6B4-4E21-88CC-962D5DF658CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235B1711-C6B4-4E21-88CC-962D5DF658CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235B1711-C6B4-4E21-88CC-962D5DF658CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F972551-D00A-4607-B24B-BEB5C09E1833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F972551-D00A-4607-B24B-BEB5C09E1833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F972551-D00A-4607-B24B-BEB5C09E1833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F972551-D00A-4607-B24B-BEB5C09E1833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E030E5A9-64F9-4447-80CC-61DAFA1438B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E030E5A9-64F9-4447-80CC-61DAFA1438B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E030E5A9-64F9-4447-80CC-61DAFA1438B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E030E5A9-64F9-4447-80CC-61DAFA1438B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5A6D5C-ADE3-495D-9414-02980F7C74FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5A6D5C-ADE3-495D-9414-02980F7C74FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5A6D5C-ADE3-495D-9414-02980F7C74FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5A6D5C-ADE3-495D-9414-02980F7C74FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FE72A43-CFAE-4B7A-84E2-01D4A3B2965C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FE72A43-CFAE-4B7A-84E2-01D4A3B2965C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FE72A43-CFAE-4B7A-84E2-01D4A3B2965C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FE72A43-CFAE-4B7A-84E2-01D4A3B2965C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DAFB3781-A867-4A24-866E-54222AA3AD74}
+	EndGlobalSection
+EndGlobal

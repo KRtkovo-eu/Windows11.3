@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MalinaFramework.Shell.Helpers
+namespace DOS.Shell.Helpers
 {
     static class ShellConsole
     {

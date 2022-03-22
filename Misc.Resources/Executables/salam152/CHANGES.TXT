@@ -1,0 +1,105 @@
+This file contains a report about bug fixes and new features
+in Servant Salamander. Plus sign means new feature addition, 
+minus sign means a bug fix.
+
+Version 1.52: (5/27/1998)
+  -the Drive Info dialog showed incorrect values for disks with size over 2 GB under NT
+  -operation move/copy to ".name" didn't work well
+  -move operation: skipped files was sent to Recycle Bin (if delete used R.B.)
+
+Version 1.51: (3/15/1998)
+  -command line parameters didn't work under Win95
+  -coping file to itself caused reducing filesize to zero
+
+Version 1.5 (3/6/98):
+  + user menu for all selected files and directories
+  + Network Neighborhood item in Change Drive dialog (Alt+F1/F2)
+  + context menu (right mouse button or Shift+F10) in Change Drive dialog (Alt+F1/F2)
+    (useful for basic floppy disk operations like format and disk copy)
+  + you can use inverse filter in panels (show files which don't match any mask)
+  + menu Commands/Go to Hot Path was added
+  + Change Case command works also with subdirectories now
+  + shared directories are marked by symbol of hand (like in WinFile and Explorer)
+  + Salamander can estimate space needed to store selected files and directories on
+    medium with choosen cluster size; you can use it to test size of your CDROM image
+  + Alt+F1/F2 dialogs can be closed using mouse click outside the dialog
+  + Salamander can be Always On Top now
+  + function Calculate Occupied Space displays also cluster utilization now
+  + Ctrl+F10 key for Compare Directories
+  + changing between brief and detailed view preserves selection and focus
+  + Skip All buttons
+  + select/unselect all files and directories (Ctrl+A or Ctrl+Num*)
+  + swap panels (Ctrl+U)
+  + the space bar key works as the Insert key now
+  + you can choose colors in internal viewer and filenames colors at cursor in panels
+  + you can copy selection to file (or printer - "prn") in internal viewer
+  + all file type associations works (some did not)
+  + viewer window position can be set to saved position or to position of main window
+  + change drive button in Directory line (choosable - see Configuration dialog)
+  + Salamander's command-line parameters: path in left panel and path in right panel
+  + Change Directory function (Shift+F7)
+  + Alt+left button double click - file or directory properties
+  + change drive hotkeys (Ctrl+letter) can be disabled - Ctrl+C,V,X,A,R,L,Q,F are available 
+    (Shift+Ctrl is used for "disabled" function - change drive in standard configuration)
+  + Open Folder from menu Commands: choose if you want to Open or to Explore folder
+    (see Configuration dialog/More Options...)
+  + you can enter password when you restore network connection (if it's necessary)
+  + Salamander can show files in lower case and directories in upper case (like VC)
+  + right mouse button works in the same way as in Explorer
+  + Ctrl+Alt+0,...,9 - change directory in second panel to hot-path number 0,...,9
+  + better select in hex mode of internal viewer (selection in hex numbers part)
+  + regular expressions matching in Find Files dialog and internal viewer
+    (end of lines are defined in internal viewer - see its configuration)
+  + calculate occupied space counts numbers of files and directories
+  + information line contains also 8.3 DOS name (only if filename is long)
+  + Salamander sets archive attribute to every copied file
+  + copying of files opened for writing is possible
+  + Shift+Ctrl+Enter inserts full path in actual panel to command line
+  + better behaviour of drag&drop - error is displayed if source=target etc.
+  + copy and move warn if there isn't enough free space on target drive
+  + Ctrl+F1 hotkey for Drive Information
+  + Ctrl+F12 hotkey for actual panel Filter
+  + Find Files dialog: you can search for files which don't match mask (see Advanced)
+  + optimized file operations (mainly delete)
+  - font in panels was changed to original after customizing colors
+  - vertical scroll bar was missing in user menu
+  - empty panel has proper background color (not always white)
+  - you can disable fast directory move (not supported on Novell drives)
+  - "send to recycle bin" message on non-fixed drives was corrected to "delete"
+  - save configuration on exit works on system shutdown
+  - crash after invoking Empty Recycle Bin command from context menu in Win95
+  - crash when sending directories to Recycle Bin under Win95
+
+Version 1.4 (11/6/97):
+  + you can customize colors, see Configuration/General
+  + file filters in panels, see menu Left and Right/Filter
+  + clipboard operations with files and directories, see menu Edit
+  + selecting files and directories with Ctrl+ and Shift+ left mouse button
+  + deleting through Recycle Bin can be inverted with pressing Shift key
+    (if Delete key doesn't use Recycle Bin, Shift+Delete key does and vice versa)
+  + optional showing of hidden and system files and directories, see Configuration/General
+  + opening special folders (My Computer etc.), see menu Commands/Open Folder
+  + Ctrl+Backspace key deletes whole word in the command line
+  + command Calculate Occupied Space counts also physical disk space
+  + directories are also sorted by name, extension or time in panels (as files)
+  + you can confirm drag&drop operations, see Configuration/General
+  + extended syntax of hexadecimal search patterns - you can specify text in ""
+  + you can terminate preparation of operations by ESC ("Reading directory tree...")
+  - problems with files with size over 4 GB
+  - system icons of shortcuts are displayed correctly - with link overlay
+  - problems with Novell 3.11 network volumes (absence of ".." directory)
+  - problems with Add and Edit dialogs in Find Files dialog (OK button didn't work well)
+
+Version 1.3 (9/10/97):
+  - copying to floppy: deathlock after finishing drag&drop operation (copy or move)
+
+Version 1.2 (9/9/97):
+  - problems with caret when the Select or Unselect dialog were displayed
+
+Version 1.1 (9/8/97):
+  + drag and drop support (salamander is target as well as source)
+  + right-click context menus for files and directories (also with Shift+F10 key)
+  + you can let Salamander clear read-only attribute when copying from CD-ROM
+  - hotkeys in panels didn't work when the internal viewer displayed some dialog
+
+Version 1.0 (8/15/97): first non-beta version

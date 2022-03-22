@@ -5,9 +5,9 @@ using System.Linq;
 using System.Media;
 using System.Text;
 using System.Threading.Tasks;
-using MalinaFramework.Shell.Helpers;
+using DOS.Shell.Helpers;
 
-namespace MalinaFramework.Shell
+namespace DOS.Shell
 {
     class MainWindow
     {
@@ -28,6 +28,7 @@ namespace MalinaFramework.Shell
                 {
                     case WindowPage.About:
                         ShellConsole.MainKeyBindings(new string[] { "F1 - Help", "F9 - Return back", "F10 - Exit" });
+
                         ShellConsole.FillPartOfWindow(ConsoleColor.Blue, 2, 1);
                         ShellConsole.WriteLine(ShellConsole.Title, ShellConsole.ShellLinePad.Center, bgColor: ConsoleColor.Blue, foreColor: ConsoleColor.White);
                         ShellConsole.WriteLine("(C) 2022, KRtkovo.eu", ShellConsole.ShellLinePad.Center, bgColor: ConsoleColor.Blue, foreColor: ConsoleColor.White);
@@ -35,7 +36,7 @@ namespace MalinaFramework.Shell
                         ShellConsole.WriteLine("", ShellConsole.ShellLinePad.Center, bgColor: ConsoleColor.Blue, foreColor: ConsoleColor.White);
                         ShellConsole.WriteLine("  This tool is used to convert the existing Ubuntu installation on your Space Malina PC", ShellConsole.ShellLinePad.Right, bgColor: ConsoleColor.Blue, foreColor: ConsoleColor.White);
                         ShellConsole.WriteLine("  to the Space Terminal for Workstations with all advantages and features.", ShellConsole.ShellLinePad.Right, bgColor: ConsoleColor.Blue, foreColor: ConsoleColor.White);
-                       ShellConsole.FillRestOfWindow(ConsoleColor.Blue);
+                        ShellConsole.FillRestOfWindow(ConsoleColor.Blue);
 
                         // Get user interaction
                         pressedKey = Console.ReadKey(true);
@@ -57,6 +58,7 @@ namespace MalinaFramework.Shell
                         break;
                     case WindowPage.ExitConfirm:
                         ShellConsole.MainKeyBindings(new string[] { "Y - Exit application", "N - Return to application" });
+
                         ShellConsole.FillPartOfWindow(ConsoleColor.Red, 3, 1);
                         ShellConsole.WriteLine("╔═════════════════════════════════════════════════════════════╗", ShellConsole.ShellLinePad.Center, bgColor: ConsoleColor.Red);
                         ShellConsole.WriteLine("║  Do you really want to stop the process of the conversion?  ║", ShellConsole.ShellLinePad.Center, bgColor: ConsoleColor.Red, foreColor: ConsoleColor.White);
@@ -86,6 +88,7 @@ namespace MalinaFramework.Shell
                         break;
                     default:
                         ShellConsole.MainKeyBindings(new string[] { "F1 - Help", "F9 - About", "F10 - Exit" });
+
                         ShellConsole.FillPartOfWindow(ConsoleColor.Blue, 1, 1);
                         ShellConsole.WriteLine("  Welcome to the " + ShellConsole.Title, ShellConsole.ShellLinePad.Right, ConsoleColor.White, ConsoleColor.Blue);
                         ShellConsole.WriteLine("", ShellConsole.ShellLinePad.Right, ConsoleColor.White, ConsoleColor.Blue);
